@@ -1,0 +1,433 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        16.88605308532715,
+        3.691589832305908,
+        41.833499908447266
+      ],
+      "min": [
+        -16.912729263305664,
+        -5.0952043533325195,
+        2.162463426589966
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 786384,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        0.9999995827674866,
+        0.9999990463256836,
+        0.9960921406745911
+      ],
+      "min": [
+        -0.999972403049469,
+        -0.9999485015869141,
+        -0.9999759197235107
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 362154,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1572768,
+      "componentType": 5126,
+      "count": 59063,
+      "max": [
+        16.867496490478516,
+        3.690384864807129,
+        44.91152572631836
+      ],
+      "min": [
+        -16.90440559387207,
+        -5.107405662536621,
+        0.027883369475603104
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 2281524,
+      "componentType": 5126,
+      "count": 59063,
+      "max": [
+        0.9999966025352478,
+        0.9999340176582336,
+        0.9997828006744385
+      ],
+      "min": [
+        -0.9999847412109375,
+        -0.9999756813049316,
+        -0.9999802112579346
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1448616,
+      "componentType": 5125,
+      "count": 305859,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 2990280,
+      "componentType": 5126,
+      "count": 762,
+      "max": [
+        0.9999994039535522,
+        1.2648491859436035,
+        1.0000028610229492
+      ],
+      "min": [
+        -6.189291000366211,
+        -0.647813618183136,
+        -0.9999996423721313
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 2999424,
+      "componentType": 5126,
+      "count": 762,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 762,
+      "max": [
+        0.9714839458465576,
+        0.9765003323554993
+      ],
+      "min": [
+        0.04261729121208191,
+        0.03645038604736328
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 2672052,
+      "componentType": 5125,
+      "count": 4224,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Uladzislau (https://sketchfab.com/uladzislau)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/study-human-male-sculpt-65836fbba6974f3cbe8fbd7bc6bebc4d",
+      "title": "Study Human Male Sculpt"
+    },
+    "generator": "Sketchfab-12.67.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 2688948,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 6096,
+      "byteOffset": 2688948,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 3008568,
+      "byteOffset": 2695044,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 5703612,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Base_Sculpt__0",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.40395232919355684,
+          0.40395232919355684,
+          0.40395232919355684,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "eye.blue",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8,
+          0.8,
+          0.8,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Base_Sculpt__0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "indices": 2,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Base_Sculpt__0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 4,
+            "POSITION": 3
+          },
+          "indices": 5,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Eyes_eye.blue_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 7,
+            "POSITION": 6,
+            "TEXCOORD_0": 8
+          },
+          "indices": 9,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        9.623267033020995e-06,
+        -0.00013257088721729815,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "5c1df4e05fa84568b38b378f8639d019.fbx"
+    },
+    {
+      "children": [
+        3,
+        6,
+        8
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4,
+        5
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.629206793918314e-05,
+        -99.99999999999868,
+        0.0,
+        0.0,
+        99.99999999999868,
+        -1.629206793918314e-05,
+        0.0,
+        5.959736881777644e-06,
+        0.00057220458984375,
+        2.1827872842550278e-09,
+        1.0
+      ],
+      "name": "Base_Sculpt"
+    },
+    {
+      "mesh": 0,
+      "name": "Base_Sculpt__0"
+    },
+    {
+      "mesh": 1,
+      "name": "Base_Sculpt__0"
+    },
+    {
+      "children": [
+        7
+      ],
+      "matrix": [
+        28.7806396484375,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.5191991223687583,
+        -28.77595803155779,
+        0.0,
+        0.0,
+        28.77595803155779,
+        0.5191991223687583,
+        0.0,
+        74.67556762695313,
+        4225.08740234375,
+        221.7027130126953,
+        1.0
+      ],
+      "name": "Eyes"
+    },
+    {
+      "mesh": 2,
+      "name": "Eyes_eye.blue_0"
+    },
+    {
+      "children": [
+        9
+      ],
+      "matrix": [
+        100.0,
+        -1.2447113425699486e-14,
+        -3.816762554935644e-15,
+        0.0,
+        1.2447113595950929e-14,
+        82.81083231481128,
+        56.056810927203195,
+        0.0,
+        -3.816761999716622e-15,
+        -56.056810927203195,
+        82.81083231481128,
+        0.0,
+        2.7163167548582834e-12,
+        12233.203125,
+        11534.9033203125,
+        1.0
+      ],
+      "name": "Sun"
+    },
+    {
+      "children": [
+        10
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Object_9"
+    },
+    {
+      "name": "Object_10"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

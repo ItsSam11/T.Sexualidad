@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap5/dist/css/bootstrap.min.css">
+    <title>Zonas erógenas</title>
+    <link rel="icon" href="Source/Image/genero.ico">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<body  style="background-color: #d7a9a9;">
+
+    <div class="model-container">
+        <nav class="navbar navbar-light" style="background-color: #ba7b7c; z-index: 2;">
+            <div class="container-fluid d-flex">
+                <a class="navbar-brand" href="index.html" style="font-family:Time New Roman">
+                    <img src="./Source/Image/genero.png" alt="" width="50" height="50"
+                        class="d-inline-block align-text-top rounded-top">
+                </a>
+                <div>
+                    <a href="female.html" style="text-decoration: none;">
+                        <img src="./Source/Image/woman.png" alt="" width="50" height="50">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <model-viewer id="hotspot-demo" ar ar-modes="webxr" camera-controls touch-action="pan-y"
+        src="assets/Hombre/scene.gltf" ar ios-src="assets\Hombre\Study_Human_Male_Sculpt.usdz" shadow-intensity="1" ouch-action="pan-y" >
+        <button slot="hotspot-visor" data-position="10 2100 310" data-normal="0 0 1" class="btn-model"
+            onclick="show('pene')" >
+            <div class="btn-contenedor" slot="hotspot-visor" data-normal="0 0 1" id="pene">
+                <p>Loremuatur natus quae reprehenderit recusandae?</p>
+            </div>
+        </button>
+        <button slot="hotspot-foot" data-position="300 3330 310" data-normal="-0.07 0.97 0.23"
+            data-visibility-attribute="visible" class="btn-model" onclick="show('pecho')">
+            <div class="btn-contenedor" slot="hotspot-visor" data-normal="0 0 1" id="pecho">
+                <p>Hola</p>
+            </div>
+        </button>
+        <button slot="hotspot-hola" data-position="300 3500 310" data-normal="-0.07 0.97 0.23"
+            data-visibility-attribute="visible" class="btn-model" onclick="show('pechoizq')">
+            <div class="btn-contenedor" slot="hotspot-visor" data-normal="0 0 1" id="pechoizq">
+                <p>Hola</p>
+            </div>
+        </button>
+
+
+    </model-viewer>
+    </div>
+    
+    <script>
+        function show(zona) {
+            const isVisible = document.querySelector('.show')
+            if (isVisible) {
+                isVisible.classList.remove('show')
+            } else {
+                const div = document.querySelector(`#${zona}`)
+                div.classList.add("show")
+            }
+
+        }
+    </script>
+</body>
+
+</html>
