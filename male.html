@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./bootstrap5/dist/css/bootstrap.min.css">
+    <link href="https://kit-pro.fontawesome.com/releases/v6.2.0/css/pro.min.css" rel="stylesheet" />
     <title>Zonas erógenas</title>
     <link rel="icon" href="Source/Image/genero.ico">
     <link rel="stylesheet" href="styles.css">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 
-<body  style="background-color: #d7a9a9;">
+<body style="background-color: #d7a9a9;">
 
     <div class="model-container">
         <nav class="navbar navbar-light" style="background-color: #ba7b7c; z-index: 2;">
@@ -21,7 +22,15 @@
                     <img src="./Source/Image/genero.png" alt="" width="50" height="50"
                         class="d-inline-block align-text-top rounded-top">
                 </a>
+
                 <div>
+                    <button class="btn" href="male.html" style="text-decoration: none" onclick="show('qr')">
+                        <i class="fal fa-camera-viewfinder fs-1"></i>
+                    </button>
+                    <div id="qr" style="margin-top: 1rem" class="btn-contenedor qr-div mt-3">
+                        <img src="Source/Image/frameman.png"
+                            alt="" class="qr-img" />
+                    </div>
                     <a href="female.html" style="text-decoration: none;">
                         <img src="./Source/Image/woman.png" alt="" width="50" height="50">
                     </a>
@@ -29,60 +38,61 @@
             </div>
         </nav>
         <model-viewer id="hotspot-demo" ar ar-modes="webxr" camera-controls touch-action="pan-y"
-        src="assets/Hombre/scene.gltf" ar ios-src="assets\Hombre\Study_Human_Male_Sculpt.usdz" shadow-intensity="1" ouch-action="pan-y" >
-        <button slot="hotspot-pene" data-position="10 2150 310" data-normal="-0.07 0.97 0.23"
-            data-visibility-attribute="visible" class="btn-model" onclick="show('pene')">
-            <div class="btn-contenedor" slot="hotspot-visor" data-normal="0 0 1" id="pene">
-                <p>Pene y escroto</p>
-            </div>
-        </button>        
-        <button slot="hotspot-pezDer" data-position="300 3330 310" data-normal="-0.07 0.97 0.23"
-            data-visibility-attribute="visible" class="btn-model" onclick="show('pezon')">
-            <div class="btn-contenedor" slot="hotspot-visor" data-normal="0 0 1" id="pezon">
-                <p>Pezón derecho</p>
-            </div>
-        </button>
-        <button slot="hotspot-pezIzq" data-position="-300 3330 310" data-normal="-0.07 0.97 0.23"
-            data-visibility-attribute="visible" class="btn-model" onclick="show('pezonizq')">
-            <div class="btn-contenedor" slot="hotspot-visor" data-normal="0 0 1" id="pezonizq">
-                <p>Pezón izquierdo</p>
-            </div>
-        </button>
-        <button slot="hotspot-muslo" data-position="-220 1930 310" data-normal="-0.07 0.97 0.23"
-            data-visibility-attribute="visible" class="btn-model" onclick="show('muslo')">
-            <div class="btn-contenedor" slot="hotspot-visor" data-normal="0 0 1" id="muslo">
-                <p>Pared interna del muslo izquierdo</p>
-            </div>
-        </button>
-        <button slot="hotspot-musloDer" data-position="220 1930 210" data-normal="-0.07 0.97 0.23"
-            data-visibility-attribute="visible" class="btn-model" onclick="show('musloDer')">
-            <div class="btn-contenedor" slot="hotspot-visor" data-normal="0 0 1" id="musloDer">
-                <p>Pared interna del muslo derecho</p>
-            </div>
-        </button>
-        <button slot="hotspot-labios" data-position="0 4050 310" data-normal="-0.07 0.97 0.23"
-            data-visibility-attribute="visible" class="btn-model" onclick="show('labios')">
-            <div class="btn-contenedor" slot="hotspot-visor" data-normal="0 0 1" id="labios">
-                <p>Labios</p>
-            </div>
-        </button>
-        <button slot="hotspot-cuello" data-position="0 3850 280" data-normal="-0.07 0.97 0.23"
-            data-visibility-attribute="visible" class="btn-model" onclick="show('cuello')">
-            <div class="btn-contenedor" slot="hotspot-visor" data-normal="0 0 1" id="cuello">
-                <p>Cuello</p>
-            </div>
-        </button>
-        <button slot="hotspot-espalda" data-position="0 3330 -480" data-normal="-0.07 0.97 0.23"
-            data-visibility-attribute="invisible" class="btn-modelespalda" onclick="show('espalda')">
-            <div class="btn-contenedor" slot="hotspot-espalda" data-normal="0 0 1" id="espalda">
-                <p>Espalda</p>
-            </div>
-        </button>
+            src="assets/Hombre/scene.gltf" ar ios-src="assets\Hombre\Study_Human_Male_Sculpt.usdz" shadow-intensity="1"
+            ouch-action="pan-y">
+            <button slot="hotspot-pene" data-position="10 2150 310" data-normal="-0.07 0.97 0.23"
+                data-visibility-attribute="visible" class="btn-model" onclick="show('pene')">
+                <div class="btn-contenedor" slot="hotspot-visor" data-normal="0 0 1" id="pene">
+                    <p>Pene y escroto</p>
+                </div>
+            </button>
+            <button slot="hotspot-pezDer" data-position="300 3330 310" data-normal="-0.07 0.97 0.23"
+                data-visibility-attribute="visible" class="btn-model" onclick="show('pezon')">
+                <div class="btn-contenedor" slot="hotspot-visor" data-normal="0 0 1" id="pezon">
+                    <p>Pezón derecho</p>
+                </div>
+            </button>
+            <button slot="hotspot-pezIzq" data-position="-300 3330 310" data-normal="-0.07 0.97 0.23"
+                data-visibility-attribute="visible" class="btn-model" onclick="show('pezonizq')">
+                <div class="btn-contenedor" slot="hotspot-visor" data-normal="0 0 1" id="pezonizq">
+                    <p>Pezón izquierdo</p>
+                </div>
+            </button>
+            <button slot="hotspot-muslo" data-position="-220 1930 310" data-normal="-0.07 0.97 0.23"
+                data-visibility-attribute="visible" class="btn-model" onclick="show('muslo')">
+                <div class="btn-contenedor" slot="hotspot-visor" data-normal="0 0 1" id="muslo">
+                    <p>Pared interna del muslo izquierdo</p>
+                </div>
+            </button>
+            <button slot="hotspot-musloDer" data-position="220 1930 210" data-normal="-0.07 0.97 0.23"
+                data-visibility-attribute="visible" class="btn-model" onclick="show('musloDer')">
+                <div class="btn-contenedor" slot="hotspot-visor" data-normal="0 0 1" id="musloDer">
+                    <p>Pared interna del muslo derecho</p>
+                </div>
+            </button>
+            <button slot="hotspot-labios" data-position="0 4050 310" data-normal="-0.07 0.97 0.23"
+                data-visibility-attribute="visible" class="btn-model" onclick="show('labios')">
+                <div class="btn-contenedor" slot="hotspot-visor" data-normal="0 0 1" id="labios">
+                    <p>Labios</p>
+                </div>
+            </button>
+            <button slot="hotspot-cuello" data-position="0 3850 280" data-normal="-0.07 0.97 0.23"
+                data-visibility-attribute="visible" class="btn-model" onclick="show('cuello')">
+                <div class="btn-contenedor" slot="hotspot-visor" data-normal="0 0 1" id="cuello">
+                    <p>Cuello</p>
+                </div>
+            </button>
+            <button slot="hotspot-espalda" data-position="0 3330 -480" data-normal="-0.07 0.97 0.23"
+                data-visibility-attribute="visible" class="btn-modelespalda" onclick="show('espalda')">
+                <div class="btn-contenedor" slot="hotspot-espalda" data-normal="0 0 1" id="espalda">
+                    <p>Espalda</p>
+                </div>
+            </button>
 
 
-    </model-viewer>
+        </model-viewer>
     </div>
-    
+
     <script>
         function show(zona) {
             const isVisible = document.querySelector('.show')
