@@ -39,4 +39,12 @@ model-viewer {
     display: flex;
     flex-direction: column;
 }
-
+.btn-model:not([data-visible]) {
+    background-color: transparent;
+}
+@media (max-width: 300px) {
+    .btn-model{
+        width: 3px;
+        height: 6px;
+    }
+}
