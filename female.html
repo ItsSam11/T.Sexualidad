@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Abril+Fatface" />
     <!-- Icono -->
     <link rel="icon" href="./Source/Image/genero.ico">
+    <link href="https://kit-pro.fontawesome.com/releases/v6.2.0/css/pro.min.css" rel="stylesheet" />
 
     <!-- Script -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
@@ -25,34 +26,112 @@
                         class="d-inline-block align-text-top rounded-top">
                 </a>
                 <div>
+                    <button class="btn" href="female.html" style="text-decoration: none" onclick="show('qr')">
+                        <i class="fal fa-camera-viewfinder fs-1"></i>
+                    </button>
+                    <div id="qr" style="margin-top: 1rem" class="btn-contenedor qr-div mt-3">
+                        <img src="Source/Image/frame.png"
+                            alt="" class="qr-img" />
+                    </div>
                     <a href="male.html" style="text-decoration: none;">
                         <img src="./Source/Image/man.png" alt="" width="50" height="50">
                     </a>
-
+                    
                 </div>
             </div>
         </nav>
         <model-viewer id="hotspot-demo" ar ar-modes="webxr" camera-controls touch-action="pan-y"
         src="assets/Mujer/study_human_female_sculpt.glb" ar ios-src="assets\Mujer\Study_Human_Female_Sculpt.usdz" shadow-intensity="1">
-        <button slot="hotspot-visor" data-position="10 2100 310" data-normal="0 0 1" class="btn-model"
-            onclick="show('pene')">
-            <div class="btn-contenedor" slot="hotspot-visor" data-normal="0 0 1" id="pene">
-                <p>Loremuatur natus quae reprehenderit recusandae?</p>
+        <button slot="hotspot-vagina" data-position="10 2150 200" data-normal="-0.07 0.97 0.23"
+            data-visibility-attribute="visible" class="btn-model" onclick="show('vagina')">
+            <div class="btn-contenedor" slot="hotspot-vagina" data-normal="0 0 1" id="vagina">
+                <p>Vagina</p>
+            </div>
+        </button>        
+        <button slot="hotspot-pezDer" data-position="200 3180 310" data-normal="-0.07 0.97 0.23"
+            data-visibility-attribute="visible" class="btn-model" onclick="show('pezon')">
+            <div class="btn-contenedor" slot="hotspot-visor" data-normal="0 0 1" id="pezon">
+                <p>Pezón derecho</p>
             </div>
         </button>
-        <button slot="hotspot-foot" data-position="300 3330 310" data-normal="-0.07 0.97 0.23"
-            data-visibility-attribute="visible" class="btn-model" onclick="show('pecho')">
-            <div class="btn-contenedor" slot="hotspot-visor" data-normal="0 0 1" id="pecho">
-                <p>Hola</p>
+        <button slot="hotspot-pezIzq" data-position="-200 3180 310" data-normal="-0.07 0.97 0.23"
+            data-visibility-attribute="visible" class="btn-model" onclick="show('pezonizq')">
+            <div class="btn-contenedor" slot="hotspot-visor" data-normal="0 0 1" id="pezonizq">
+                <p>Pezón izquierdo</p>
             </div>
         </button>
-        <button slot="hotspot-hola" data-position="300 3500 310" data-normal="-0.07 0.97 0.23"
-            data-visibility-attribute="visible" class="btn-model" onclick="show('pechoizq')">
-            <div class="btn-contenedor" slot="hotspot-visor" data-normal="0 0 1" id="pechoizq">
-                <p>Hola</p>
+        <button slot="hotspot-muslo" data-position="-220 1930 110" data-normal="-0.07 0.97 0.23"
+            data-visibility-attribute="visible" class="btn-model" onclick="show('muslo')">
+            <div class="btn-contenedor" slot="hotspot-visor" data-normal="0 0 1" id="muslo">
+                <p>Pared interna del muslo izquierdo</p>
             </div>
         </button>
-
+        <button slot="hotspot-musloDer" data-position="220 1930 110" data-normal="-0.07 0.97 0.23"
+            data-visibility-attribute="visible" class="btn-model" onclick="show('musloDer')">
+            <div class="btn-contenedor" slot="hotspot-visor" data-normal="0 0 1" id="musloDer">
+                <p>Pared interna del muslo derecho</p>
+            </div>
+        </button>
+        <button slot="hotspot-labios" data-position="0 3820 310" data-normal="-0.07 0.97 0.23"
+            data-visibility-attribute="visible" class="btn-model" onclick="show('labios')">
+            <div class="btn-contenedor" slot="hotspot-visor" data-normal="0 0 1" id="labios">
+                <p>Labios</p>
+            </div>
+        </button>
+        <button slot="hotspot-cuello" data-position="0 3610 280" data-normal="-0.07 0.97 0.23"
+            data-visibility-attribute="visible" class="btn-model" onclick="show('cuello')">
+            <div class="btn-contenedor" slot="hotspot-visor" data-normal="0 0 1" id="cuello">
+                <p>Cuello</p>
+            </div>
+        </button>
+        <button slot="hotspot-cabello" data-position="0 4190 300" data-normal="-0.07 0.97 0.23"
+            data-visibility-attribute="visible" class="btn-model" onclick="show('cabello')">
+            <div class="btn-contenedor" slot="hotspot-cabello" data-normal="0 0 1" id="cabello">
+                <p>Cabello</p>
+            </div>
+        </button>
+        <button slot="hotspot-espalda" data-position="0 3330 -400" data-normal="-0.07 0.97 0.23"
+            data-visibility-attribute="visible" class="btn-modelespalda" onclick="show('espalda')">
+            <div class="btn-contenedor" slot="hotspot-espalda" data-normal="0 0 1" id="espalda">
+                <p>Espalda</p>
+            </div>
+        </button>
+        <button slot="hotspot-pieDer" data-position="220 200 -100" data-normal="-0.07 0.97 0.23"
+            data-visibility-attribute="visible" class="btn-model" onclick="show('pieDer')">
+            <div class="btn-contenedor" slot="hotspot-pieDer" data-normal="0 0 1" id="pieDer">
+                <p>Pie derecho</p>
+            </div>
+        </button>
+        <button slot="hotspot-pieIzq" data-position="-220 200 -100" data-normal="-0.07 0.97 0.23"
+            data-visibility-attribute="visible" class="btn-model" onclick="show('pieIzq')">
+            <div class="btn-contenedor" slot="hotspot-pieIzq" data-normal="0 0 1" id="pieIzq">
+                <p>Pie izquierdo</p>
+            </div>
+        </button>
+        <button slot="hotspot-roDer" data-position="270 1240 -400" data-normal="-0.07 0.97 0.23"
+            data-visibility-attribute="visible" class="btn-modelespalda" onclick="show('roDer')">
+            <div class="btn-contenedor" slot="hotspot-roDer" data-normal="0 0 1" id="roDer">
+                <p>Detrás de la rodilla derecha</p>
+            </div>
+        </button>
+        <button slot="hotspot-roIzq" data-position="-270 1240 -390" data-normal="-0.07 0.97 0.23"
+            data-visibility-attribute="visible" class="btn-modelespalda" onclick="show('roIzq')">
+            <div class="btn-contenedor" slot="hotspot-roIzq" data-normal="0 0 1" id="roIzq">
+                <p>Detrás de la rodilla izquierda</p>
+            </div>
+        </button>
+        <button slot="hotspot-nalgaDer" data-position="-170 2210 -360" data-normal="-0.07 0.97 0.23"
+            data-visibility-attribute="visible" class="btn-modelespalda" onclick="show('nalgaDer')">
+            <div class="btn-contenedor" slot="hotspot-nalgaDer" data-normal="0 0 1" id="nalgaDer">
+                <p>Gluteo derecho</p>
+            </div>
+        </button>
+        <button slot="hotspot-nalgaIzq" data-position="170 2210 -390" data-normal="-0.07 0.97 0.23"
+            data-visibility-attribute="visible" class="btn-modelespalda" onclick="show('nalgaIzq')">
+            <div class="btn-contenedor" slot="hotspot-nalgaIzq" data-normal="0 0 1" id="nalgaIzq">
+                <p>Gluteo izquierdo</p>
+            </div>
+        </button>
 
     </model-viewer>
     </div>
