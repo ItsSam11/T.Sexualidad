@@ -48,3 +48,22 @@ model-viewer {
         height: 6px;
     }
 }
+.btn-modelespalda{
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    border: 0px;
+    background-color: #fbc4ab;
+    opacity: 0.9;
+}
+.btn-modelespalda:not([data-visible]) {
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    border: 0px;
+    background-color: #fbc4ab;
+    opacity: 0.9;
+}
+.btn-modelespalda:not(:not([data-visible])) {
+    background-color: transparent;
+}
