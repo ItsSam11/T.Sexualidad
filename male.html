@@ -30,12 +30,12 @@
         </nav>
         <model-viewer id="hotspot-demo" ar ar-modes="webxr" camera-controls touch-action="pan-y"
         src="assets/Hombre/scene.gltf" ar ios-src="assets\Hombre\Study_Human_Male_Sculpt.usdz" shadow-intensity="1" ouch-action="pan-y" >
-        <button slot="hotspot-visor" data-position="10 2100 310" data-normal="0 0 1" class="btn-model"
-            onclick="show('pene')" >
+        <button slot="hotspot-pene" data-position="10 2100 310" data-normal="-0.07 0.97 0.23"
+            data-visibility-attribute="visible" class="btn-model" onclick="show('pene')">
             <div class="btn-contenedor" slot="hotspot-visor" data-normal="0 0 1" id="pene">
-                <p>Loremuatur natus quae reprehenderit recusandae?</p>
+                <p>Hola</p>
             </div>
-        </button>
+        </button>        
         <button slot="hotspot-foot" data-position="300 3330 310" data-normal="-0.07 0.97 0.23"
             data-visibility-attribute="visible" class="btn-model" onclick="show('pecho')">
             <div class="btn-contenedor" slot="hotspot-visor" data-normal="0 0 1" id="pecho">
