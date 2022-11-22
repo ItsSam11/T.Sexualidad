@@ -36,9 +36,9 @@
                     </a>
                 </div>
             </div>
-        </nav>
-           <model-viewer ar camera-controls touch-action="pan-y" src="assets/Hombre/study_human_male_sculpt.glb" alt="A 3D model of a human body">
-
+        </nav>        
+        <model-viewer id="hotspot-demo" ar ar-modes="webxr" camera-controls touch-action="pan-y"
+        src="assets/Hombre/study_human_male_sculpt.glb" ar ios-src="assets\Hombre\Study_Human_Male_Sculpt.usdz" shadow-intensity="1">
             <button slot="hotspot-pene" data-position="10 2150 310" data-normal="-0.07 0.97 0.23"
                 data-visibility-attribute="visible" class="btn-model" onclick="show('pene')">
                 <div class="btn-contenedor" slot="hotspot-visor" data-normal="0 0 1" id="pene">
@@ -96,6 +96,7 @@
 
 
         </model-viewer>
+        
     </div>
 
     <script>
